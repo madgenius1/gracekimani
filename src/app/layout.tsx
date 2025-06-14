@@ -9,7 +9,7 @@ const quickSand = Quicksand({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Grace Kimani & Company Advocates",
+  title: "Grace Kimani and Company Advocates",
   description: "A full-service law firm based in Githunguri, Nairobi, Kenya. We offer a world class experience and high-quality legal services for solutions to clients. We ensure that our clients get the best solutions for their legal and business advisory needs.",
 };
 
