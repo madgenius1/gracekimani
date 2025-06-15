@@ -73,7 +73,7 @@ const practiceAreas = [
 export default function PracticeAreas() {
     return (
         <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="mb-10 lg:mb-16">
                     <div className="flex items-center space-x-3 mb-4">

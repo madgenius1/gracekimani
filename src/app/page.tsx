@@ -1,3 +1,4 @@
+import Banner from "./components/landing/Banner";
 import ContactSection from "./components/landing/Contact";
 import CTASection from "./components/landing/CTASection";
 import FAQs from "./components/landing/FAQs";
@@ -14,10 +15,11 @@ export default function Home() {
     <main>
       <Hero />
       <PracticeAreas />
+      <Banner />
       <WhyUsSection />
       <ProfileHighlight />
-      <Testimonials />
       <LegalInsights />
+      <Testimonials />
       <FAQs />
       <CTASection />
       <ContactSection />
