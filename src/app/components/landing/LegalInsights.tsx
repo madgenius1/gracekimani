@@ -8,42 +8,42 @@ const legalDocuments = [
     {
         title: "Affidavits",
         description: "A sworn written statement of facts, made voluntarily and confirmed under oath.",
-        link: "#"
+        link: "/resources/affidavits"
     },
     {
         title: "Contracts",
         description: "A legally enforceable agreement between parties that outlines their mutual duties and rights.",
-        link: "#"
+        link: "/resources/contracts"
     },
     {
         title: "Agreements",
         description: "A mutual understanding between parties about their rights and obligations, which may or may not be legally binding.",
-        link: "#"
+        link: "/resources/agreements"
     },
     {
         title: "Corporate Documents",
         description: "Formal records and filings vital for a company's legal formation, governance, and ongoing operations.",
-        link: "#"
+        link: "/resources/corporate-documents"
     },
     {
         title: "Leases",
         description: "A legal contract detailing the terms for renting property from one party to another for a set period.",
-        link: "#"
+        link: "/resources/leases"
     },
     {
         title: "Deeds",
         description: "A legal document that officially transfers the ownership of property or an asset.",
-        link: "#"
+        link: "/resources/deeds"
     },
     {
         title: "Intellectual Property",
         description: "Legal instruments like patents, trademarks, and copyrights that protect original creations and grant exclusive ownership rights.",
-        link: "#"
+        link: "/resources/intellectual-property"
     },
     {
         title: "Legal Notices",
         description: "A formal written communication used to inform someone of a legal action, obligation, or intent, often preceding official proceedings.",
-        link: "#"
+        link: "/resources/legal-notices"
     }
 ]
 
@@ -70,7 +70,7 @@ export default function LegalInsights() {
                 </div>
                 <div className="grid cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 lg:gap-6 gap-4">
                     {legalDocuments.map((doc, index) => (
-                        <Link key={index} href="#" className="flex flex-col gap-2 space-y-2 p-4 bg-white rounded-md shadow-md h-auto">
+                        <Link key={index} href={doc.link} className="flex flex-col gap-2 space-y-2 p-4 bg-white rounded-md shadow-md h-auto transition-transform duration-300 hover:scale-105">
                             <h3 className="text-md font-semibold text-gray-900">{doc.title}</h3>
                             <p className="text-sm text-gray-600">{doc.description}</p>
                         </Link>
