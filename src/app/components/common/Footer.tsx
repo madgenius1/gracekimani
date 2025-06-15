@@ -33,8 +33,8 @@ export default function Footer() {
                             <Link href="tel:+254716976001" className="flex items-center hover:text-gray-200 transition-colors duration-200">
                                 <FaPhoneAlt className="mr-3 text-lg" /> 0716976001
                             </Link>
-                            <Link href="mailto:info@yourfirm.com" className="flex items-center hover:text-gray-200 transition-colors duration-200">
-                                <FaEnvelope className="mr-3 text-lg" /> info@yourfirm.com {/* Added a placeholder email */}
+                            <Link href="mailto:info@gracekimaniadvocates.co.ke" className="flex items-center hover:text-gray-200 transition-colors duration-200">
+                                <FaEnvelope className="mr-3 text-lg" /> info@gracekimaniadvocates.co.ke {/* Added a placeholder email */}
                             </Link>
                             <Link href="http://maps.google.com/?q=Githunguri,Nairobi" target='_blank' rel="noopener noreferrer" className="flex items-start hover:text-gray-200 transition-colors duration-200">
                                 <FaMapMarkerAlt className="mr-3 text-lg mt-1" /> Githunguri, Nairobi
