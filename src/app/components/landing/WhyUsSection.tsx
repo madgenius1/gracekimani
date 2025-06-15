@@ -21,9 +21,9 @@ const values = [
     }
 ]
 
-export default function WhyUsSection() {
+export default function WhyUsSection() { 
     return (
-        <section className="bg-white dark:bg-white py-12 sm:py-16 lg:py-20">
+        <section className="bg-gray-100 dark:bg-gray-100 py-12 sm:py-16 lg:py-20">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="mb-10 lg:mb-16">

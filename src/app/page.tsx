@@ -6,7 +6,6 @@ import Hero from "./components/landing/Hero";
 import LegalInsights from "./components/landing/LegalInsights";
 import PracticeAreas from "./components/landing/PracticeAreas";
 import ProfileHighlight from "./components/landing/ProfileHighlight";
-import Testimonials from "./components/landing/Testimonials";
 import WhyUsSection from "./components/landing/WhyUsSection";
 
 
@@ -19,7 +18,6 @@ export default function Home() {
       <WhyUsSection />
       <ProfileHighlight />
       <LegalInsights />
-      <Testimonials />
       <FAQs />
       <CTASection />
       <ContactSection />

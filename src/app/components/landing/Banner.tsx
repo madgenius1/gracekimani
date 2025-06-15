@@ -13,7 +13,7 @@ export default function Banner() {
                             <p className="mt-2 text-lg">Get legal advice at your fingertips.</p>
                         </div>
                         <div className="mt-4 lg:mt-0">
-                            <Link href="/contact" className="bg-white text-[#000EEE] px-6 py-4 rounded-lg font-semibold hover:bg-gray-200 transition duration-300">
+                            <Link href="/contact" className="bg-white text-[#000EEE] px-6 py-4 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
                                 Request a Personalized Service
                             </Link>
                         </div>
