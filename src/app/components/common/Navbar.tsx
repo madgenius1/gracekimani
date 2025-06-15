@@ -9,17 +9,19 @@ export default function Navbar() {
             <div className="max-w-screen-xl mx-auto">
                 <div className="flex items-center justify-between lg:px-8 px-4">
                     <div className="">
-                        <Image
-                            src="/logo.png"
-                            alt="Logo"
-                            width={120}
-                            height={80}
-                            className=" w-auto"
-                        />
+                        <Link href="/" >
+                            <Image
+                                src="/logo.png"
+                                alt="Logo"
+                                width={120}
+                                height={80}
+                                className=" w-auto"
+                            /></Link>
                     </div>
-                    <div className="lg:flex hidden items-center space-x-4 lg:flex-row">
+                    <div className="lg:flex hidden items-center space-x-2 lg:flex-row">
                         <Link href="/practice-areas" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Practice Areas</Link>
                         <Link href="/legal-insights" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Legal Insights</Link>
+                        <Link href="/resources" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Resources</Link>
                         <Link href="/about" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">About Us</Link>
                         <Link href="/contact" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Contact</Link>
                     </div>
