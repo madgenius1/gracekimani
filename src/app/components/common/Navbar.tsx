@@ -34,9 +34,8 @@ export default function Navbar() {
                     <div className="hidden flex-col lg:hidden md:hidden px-4 items-center gap-2 space-y-2 rounded-md z-30 bg-white">
                         <Link href="/" className="text-gray-950 uppercase font-semibold">Home</Link>
                         <Link href="/practice-areas" className="text-gray-950 uppercase rounded-md font-semibold">Practice Areas</Link>
-                        <Link href="/profile" className="text-gray-950 uppercase rounded-md font-semibold">Profile</Link>
-                        <Link href="/faqs" className="text-gray-950 uppercase rounded-md font-semibold">FAQs</Link>
                         <Link href="/about" className="text-gray-950 uppercase rounded-md font-semibold">Resources</Link>
+                        <Link href="/profile" className="text-gray-950 uppercase rounded-md font-semibold">Profile</Link>
                         <Link href="/about" className="text-gray-950 uppercase rounded-md font-semibold">About</Link>
                         <Link href="/contact" className="text-gray-950 uppercase rounded-md font-semibold">Contact</Link>
                     </div>

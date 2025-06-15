@@ -55,9 +55,6 @@ export default function Footer() {
                             <Link href="/about" className="hover:text-gray-200 transition-colors duration-200">
                                 About Us
                             </Link>
-                            <Link href="/team" className="hover:text-gray-200 transition-colors duration-200">
-                                Our Team
-                            </Link>
                         </div>
                     </div>
 
@@ -73,9 +70,6 @@ export default function Footer() {
                             </Link>
                             <Link href="/privacy" className="hover:text-gray-200 transition-colors duration-200">
                                 Privacy Policy
-                            </Link>
-                            <Link href="/faq" className="hover:text-gray-200 transition-colors duration-200">
-                                FAQs
                             </Link>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ export default function ProfileHighlight() {
 
                 <div className="flex justify-center mt-12 sm:mt-16">
                     <Link
-                        href="/about"
+                        href="/profile"
                         className="inline-flex items-center px-6 py-4 bg-[#000EEE] text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-[#099D15] transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
                     >
                         Discover Our Full Team
