@@ -1,3 +1,26 @@
+
+
+
+
+const values = [
+    {
+        title: "Trust & Integrity",
+        description: "We operate with unwavering honesty, trustworthiness, and ethical conduct. We honor our commitments and take full accountability for our actions."
+    },
+    {
+        title: "Client Focus & Confidentiality",
+        description: "Our commitment is to deliver exceptional client service. We prioritize your needs and uphold the strictest standards of confidentiality at all times."
+    },
+    {
+        title: "Expertise & Collaboration",
+        description: "Our advice and insights are built upon a deep understanding of current legal frameworks across our diverse practice areas, ensuring well-informed strategies."
+    },
+    {
+        title: "Commitment to Excellence",
+        description: "We relentlessly pursue outstanding results in every endeavor. Our meticulous attention to detail ensures data-backed decisions and superior outcomes."
+    }
+]
+
 export default function WhyUsSection() {
     return (
         <section className="bg-white dark:bg-white py-12 sm:py-16 lg:py-20">
@@ -19,50 +42,19 @@ export default function WhyUsSection() {
                         </p>
                     </div>
                 </div>
-
-                {/* Values Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                    {/* Trust and Integrity Card */}
-                    <div className="flex flex-col gap-4 rounded-lg shadow-lg p-6 bg-white transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <h3 className="text-xl font-semibold text-gray-950">
-                            Trust & Integrity
-                        </h3>
-                        <p className="text-md text-gray-700 leading-relaxed">
-                            We operate with unwavering honesty, trustworthiness, and ethical conduct. We honor our commitments and take full accountability for our actions.
-                        </p>
-                    </div>
-
-                    {/* Client Focus and Confidentiality Card */}
-                    <div className="flex flex-col gap-4 rounded-lg shadow-lg p-6 bg-white transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <h3 className="text-xl font-semibold text-gray-950">
-                            Client Focus & Confidentiality
-                        </h3>
-                        <p className="text-md text-gray-700 leading-relaxed">
-                            Our commitment is to deliver exceptional client service. We prioritize your needs and uphold the strictest standards of confidentiality at all times.
-                        </p>
-                    </div>
-
-                    {/* Knowledge and Collaboration Card */}
-                    <div className="flex flex-col gap-4 rounded-lg shadow-lg p-6 bg-white transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <h3 className="text-xl font-semibold text-gray-950">
-                            Expertise & Collaboration
-                        </h3>
-                        <p className="text-md text-gray-700 leading-relaxed">
-                            Our advice and insights are built upon a deep understanding of current legal frameworks across our diverse practice areas, ensuring well-informed strategies.
-                        </p>
-                    </div>
-
-                    {/* Commitment to Excellence Card */}
-                    <div className="flex flex-col gap-4 rounded-lg shadow-lg p-6 bg-white transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <h3 className="text-xl font-semibold text-gray-950">
-                            Commitment to Excellence
-                        </h3>
-                        <p className="text-md text-gray-700 leading-relaxed">
-                            We relentlessly pursue outstanding results in every endeavor. Our meticulous attention to detail ensures data-backed decisions and superior outcomes.
-                        </p>
-                    </div>
+                    {values.map((value, index) => (
+                        <div key={index} className="flex flex-col gap-4 rounded-lg shadow-lg p-6 bg-white transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <h3 className="text-xl font-semibold text-gray-950">
+                                {value.title}
+                            </h3>
+                            <p className="text-md text-gray-700 leading-relaxed">
+                                {value.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

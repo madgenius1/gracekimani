@@ -20,7 +20,6 @@ export default function Navbar() {
                     </div>
                     <div className="lg:flex hidden items-center space-x-2 lg:flex-row">
                         <Link href="/practice-areas" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Practice Areas</Link>
-                        <Link href="/legal-insights" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Legal Insights</Link>
                         <Link href="/resources" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Resources</Link>
                         <Link href="/about" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">About Us</Link>
                         <Link href="/contact" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Contact</Link>
@@ -32,7 +31,6 @@ export default function Navbar() {
                     <div className="hidden flex-col lg:hidden md:hidden px-4 items-center gap-2 space-y-2 rounded-md z-30 bg-white">
                         <Link href="/" className="text-gray-950 uppercase font-semibold">Home</Link>
                         <Link href="/practice-areas" className="text-gray-950 uppercase rounded-md font-semibold">Practice Areas</Link>
-                        <Link href="/legal-insights" className="text-gray-950 uppercase rounded-md font-semibold">Legal Insights</Link>
                         <Link href="/profile" className="text-gray-950 uppercase rounded-md font-semibold">Profile</Link>
                         <Link href="/faqs" className="text-gray-950 uppercase rounded-md font-semibold">FAQs</Link>
                         <Link href="/about" className="text-gray-950 uppercase rounded-md font-semibold">Resources</Link>
