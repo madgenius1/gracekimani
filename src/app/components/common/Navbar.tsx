@@ -22,7 +22,7 @@ export default function Navbar() {
 
                     <div className="lg:flex hidden items-center space-x-2 lg:flex-row">
                         {/* Change Practice Areas Link to a drop down */}
-                        <Link href="#" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Practice Areas</Link>
+                        <Link href="/practice-areas" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Practice Areas</Link>
                         <Link href="/resources" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Resources</Link>
                         <Link href="/about" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">About Us</Link>
                         <Link href="/contact" className="text-gray-950 uppercase hover:bg-gray-200 p-3 rounded-md font-semibold hover:text-gray-800">Contact</Link>

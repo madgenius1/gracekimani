@@ -78,7 +78,7 @@ export default function Footer() {
                 {/* Copyright and Developer Info */}
                 <div className="border-t border-white mt-16 pt-8 text-center text-sm">
                     <p className="mb-2">
-                        &copy; {new Date().getFullYear()} **Grace Kimani and Company Advocates**. All rights reserved.
+                        &copy; {new Date().getFullYear()} Grace Kimani and Company Advocates. All rights reserved.
                     </p>
                     <p>
                         Designed and Developed by{' '}
