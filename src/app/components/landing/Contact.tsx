@@ -20,9 +20,10 @@ export default function ContactSection() {
                         Reach Out To Us for Legal Assistance
                     </h1>
                 </div>
-                {/* Bento Grid Contact Component */}
-                <ContactComponent />
             </div>
+            {/* Bento Grid Contact Component */}
+            <ContactComponent />
+
         </section>
     )
 }

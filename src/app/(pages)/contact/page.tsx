@@ -1,5 +1,5 @@
 
-
+import ContactComponent from "@/app/components/ui/ContactComponent";
 import HeaderComponent from "@/app/components/ui/HeaderComponent";
 
 
@@ -10,10 +10,8 @@ export default function Page() {
                 title="Contact Us Today"
                 tagline="Reach Out To Us for Your Legal Needs."
             />
-            <div className="max-w-screen-xl mx-auto">
-                <div className="lg:p-8 md:p-6 p-4">
-                    <h2 className="text-xl text-gray-950 text-center">Contact Us</h2>
-                </div>
+            <div className="lg:py-8 md:py-6 py-4">
+                <ContactComponent />
             </div>
         </main>
     )
