@@ -1,6 +1,7 @@
 
 
 import HeaderComponent from "@/app/components/ui/HeaderComponent";
+import ProfileComponent from "@/app/components/ui/ProfileComponent";
 
 export default function Page() {
     return (
@@ -11,7 +12,7 @@ export default function Page() {
             />
             <div className="max-w-screen-xl mx-auto">
                 <div className="lg:p-8 md:p-6 p-4">
-                    <h2 className="text-xl text-gray-950 text-center">Profile</h2>
+                    <ProfileComponent />
                 </div>
             </div>
         </main>
