@@ -39,7 +39,6 @@ export default function Page() {
                                         </h3>
                                         <BsArrowRight className="text-2xl sm:text-3xl transition-transform duration-300 group-hover:translate-x-1" />
                                     </div>
-
                                     <p className="text-sm sm:text-base leading-relaxed opacity-0 max-h-0 overflow-hidden transition-all duration-300 group-hover:opacity-100 group-hover:max-h-32 pb-2">
                                         {area.description}
                                     </p>

@@ -41,12 +41,15 @@ export default function ProfileComponent() {
                         <span className="text-md lg:text-xl font-semibold text-gray-800">
                             Founding Partner
                         </span>
+                        <span className="text-md uppercase font-semibold text-[#000EEE] lg:text-lg leading-relaxed">
+                            Employment and Labor Relations | Corporate and Commercial | Real Esate and Property | Arbitration and Dispute Resolution
+                        </span>
                         <span className="flex flex-row gap-2 items-center">
-                            <HiMiniPhone size={28} className="text-gray-700" />
+                            <HiMiniPhone size={22} className="text-gray-700" />
                             <Link href="tel:+25479566188" className="text-gray-800 text-md font-medium hover:underline">079566188</Link>
                         </span>
                         <span className="flex flex-row gap-2 items-center">
-                            <HiOutlineMail size={28} className="text-gray-700" />
+                            <HiOutlineMail size={22} className="text-gray-700" />
                             <Link href="mailto:gk@gracekimaniadvocates.co.ke" className="text-gray-800 text-md font-medium hover:underline">gk@gracekimaniadvocates.co.ke</Link>
                         </span>
                     </div>
