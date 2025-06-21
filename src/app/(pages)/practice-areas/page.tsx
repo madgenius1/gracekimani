@@ -1,14 +1,14 @@
 "use client"
 
 
-import { useParams } from "next/navigation";
+// import { useParams } from "next/navigation";
 import Link from 'next/link'
 import { BsArrowRight } from "react-icons/bs";
 import HeaderComponent from "@/app/components/ui/HeaderComponent";
 import { practiceAreasList } from "@/app/lib/practiceAreas";
 
 export default function Page() {
-    const { practiceareasId } = useParams();
+    // const { practiceareasId } = useParams();
 
     return (
         <main className="dark:bg-white bg-white">

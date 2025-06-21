@@ -1,6 +1,6 @@
 "use client"
 
-import { useParams } from "next/navigation";
+// import { useParams } from "next/navigation";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { legalDocuments } from "@/app/lib/resources";
@@ -8,7 +8,7 @@ import { legalDocuments } from "@/app/lib/resources";
 
 
 export default function LegalInsights() {
-    const { resourceId } = useParams();
+    // const { resourceId } = useParams();
     // const resource = legalDocuments[resourceId as keyof typeof legalDocuments];
 
     return (

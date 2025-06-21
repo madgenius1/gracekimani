@@ -1,13 +1,13 @@
 "use client";
 
-import { useParams } from "next/navigation";
+// import { useParams } from "next/navigation";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import { practiceAreasList } from "@/app/lib/practiceAreas";
 
 
 export default function PracticeAreas() {
-    const { practiceareasId } = useParams();
+    // const { practiceareasId } = useParams();
 
     return (
         <section className="bg-gray-100 dark:bg-gray-100 py-12 sm:py-16 lg:py-20">
