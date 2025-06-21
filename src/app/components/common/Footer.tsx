@@ -27,8 +27,8 @@ export default function Footer() {
                     <div className="flex flex-col items-start">
                         <h3 className="text-xl font-bold mb-4">Contact Us</h3>
                         <div className="space-y-3 flex flex-col">
-                            <Link href="tel:+25479566188" className="flex items-center hover:text-gray-200 transition-colors duration-200">
-                                <FaPhoneAlt className="mr-3 text-lg" /> 079566188
+                            <Link href="tel:+254795661888" className="flex items-center hover:text-gray-200 transition-colors duration-200">
+                                <FaPhoneAlt className="mr-3 text-lg" /> 0795661888
                             </Link>
                             <Link href="tel:+254716976001" className="flex items-center hover:text-gray-200 transition-colors duration-200">
                                 <FaPhoneAlt className="mr-3 text-lg" /> 0716976001

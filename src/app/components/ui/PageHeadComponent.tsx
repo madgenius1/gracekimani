@@ -8,7 +8,7 @@ interface Props {
 
 export default function PageHeadComponent({ title, tagline }: Props) {
     return (
-        <main className="bg-[#A40606]">
+        <div className="bg-[#A40606]">
             <div className="max-w-screen-xl mx-auto py-4">
                 <div className="lg:px-8 lg:py-10 md:px-6 md:py-12 px-4 py-6">
                     <div className="flex flex-col py-4 space-y-4 items-start justify-start">
@@ -17,6 +17,6 @@ export default function PageHeadComponent({ title, tagline }: Props) {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
