@@ -1,72 +1,73 @@
+//This goes to /landing/#PracticeAreasList
 export const practiceAreasList = [
   {
-    id: "arbitration-and-dispute-resolution",
     title: "Arbitration & Dispute Resolution",
-    link: "/practice-areas/arbitration-and-dispute-resolution",
+    practiceareasId: "arbitration-dispute-resolution",
     description:
       "Our expert Arbitration & Dispute Resolution services ensure swift and fair settlements for complex legal conflicts, guiding you through mediation and arbitration with precision.",
     image: "/lawfirm-arbitration.jpg",
+    size: "large",
   },
   {
-    id: "banking-and-investment",
     title: "Banking & Investment",
-    link: "/practice-areas/banking-and-investment",
+    practiceareasId: "banking-and-investment",
     description:
       "We provide comprehensive legal guidance in Banking & Investment, ensuring compliance, structuring deals, and securing and growing your financial ventures.",
     image: "/lawfirm-banking.jpg",
+    size: "small",
   },
   {
-    id: "corporate-and-commercial",
     title: "Corporate & Commercial",
-    link: "/practice-areas/corporate-and-commercial",
+    practiceareasId: "corporate-and-commercial",
     description:
       "Our Corporate & Commercial law expertise helps businesses navigate complex regulations, manage transactions, and achieve their strategic commercial goals with confidence.",
     image: "/lawfirm-corporate.jpg",
+    size: "small",
   },
   {
-    id: "family-law-and-succession",
     title: "Family Law & Succession",
-    link: "/practice-areas/family-law-and-succession",
+    practiceareasId: "family-law-and-succession",
     description:
       "Compassionate and expert legal support for family matters including divorce, child custody, and seamless succession planning and estate administration.",
     image: "/lawfirm-family.jpg",
+    size: "small",
   },
   {
-    id: "employment-and-labor-relations",
     title: "Employment and Labor Relations",
-    link: "/practice-areas/employment-and-labor-relations",
+    practiceareasId: "employment-and-labor-relations",
     description:
       "We specialize in Employment & Labor law, protecting your rights and fostering fair workplace practices.",
     image: "/lawfirm-employment.jpg",
+    size: "large",
   },
   {
-    id: "real-estate-and-conveyancing",
     title: "Real Estate & Conveyancing",
-    link: "/practice-areas/real-estate-and-conveyancing",
+    practiceareasId: "real-estate-and-conveyancing",
     description:
       "Specialized services in property transactions, including land acquisition, leases, and dispute resolution, ensuring smooth and secure real estate dealings.",
     image: "/lawfirm-realestate.jpg",
+    size: "small",
   },
   {
-    id: "intellectual-property",
     title: "Intellectual Property",
-    link: "/practice-areas/intellectual-property",
+    practiceareasId: "intellectual-property",
     description:
       "Protecting your innovations and creative works through robust copyright, trademark, and patent registration, and defending your intellectual assets.",
     image: "/lawfirm-ip.jpg",
+    size: "medium",
   },
   {
-    id: "tax-laws",
     title: "Tax Laws",
-    link: "/practice-areas/tax-laws",
+    practiceareasId: "tax-laws",
     description:
       "Our Tax law services offer strategic advice to optimize your tax obligations and ensure compliance with regulations.",
     image: "/lawfirm-tax.jpg",
+    size: "small",
   },
 ];
 
 export interface PracticeArea {
-  id: string;
+  practiceareasId: string;
   title: string;
   tagline: string;
   description: string;
@@ -74,7 +75,7 @@ export interface PracticeArea {
 
 export const practiceAreas: PracticeArea[] = [
   {
-    id: "arbitration-and-dispute-resolution",
+    practiceareasId: "arbitration-and-dispute-resolution",
     title: "Arbitration & Dispute Resolution",
     tagline:
       "Resolving conflicts through fair, binding alternatives to litigation.",
@@ -85,7 +86,7 @@ export const practiceAreas: PracticeArea[] = [
     We are experienced in both domestic and international dispute forums and align every step with Kenyan and regional legal standards.`,
   },
   {
-    id: "banking-and-investment",
+    practiceareasId: "banking-and-investment",
     title: "Banking & Investment",
     tagline:
       "Protecting financial transactions and investor interests across East Africa.",
@@ -96,7 +97,7 @@ export const practiceAreas: PracticeArea[] = [
     We also assist in litigation related to fraud, loan recovery, and regulatory enforcement.`,
   },
   {
-    id: "corporate-and-commercial",
+    practiceareasId: "corporate-and-commercial",
     title: "Corporate & Commercial",
     tagline:
       "From business setup to strategic partnerships — we've got you covered.",
@@ -106,7 +107,7 @@ export const practiceAreas: PracticeArea[] = [
     Our legal counsel covers everything from startups to listed corporations. We provide practical, industry-specific advice tailored to Kenya’s regulatory and business environment.`,
   },
   {
-    id: "family-law-and-succession",
+    practiceareasId: "family-law-and-succession",
     title: "Family Law & Succession",
     tagline:
       "Supporting families through sensitive transitions and inheritance planning.",
@@ -117,7 +118,7 @@ export const practiceAreas: PracticeArea[] = [
     We help clients preserve family harmony and ensure rightful distribution of estates under Kenyan succession law.`,
   },
   {
-    id: "employment-and-labor-relations",
+    practiceareasId: "employment-and-labor-relations",
     title: "Employment and Labor Relations",
     tagline: "Balancing employer-employee rights with legal compliance.",
     description: `
@@ -126,7 +127,7 @@ export const practiceAreas: PracticeArea[] = [
     We draft employment policies and conduct internal disciplinary guidance for HR teams, offering proactive legal frameworks that reduce litigation and foster ethical labor practices.`,
   },
   {
-    id: "real-estate-and-conveyancing",
+    practiceareasId: "real-estate-and-conveyancing",
     title: "Real Estate & Conveyancing",
     tagline: "Secure property transactions with legal precision.",
     description: `
@@ -136,7 +137,7 @@ export const practiceAreas: PracticeArea[] = [
     We also handle land dispute resolution and court representation where needed.`,
   },
   {
-    id: "intellectual-property",
+    practiceareasId: "intellectual-property",
     title: "Intellectual Property",
     tagline: "Safeguard your creative and commercial innovations.",
     description: `
@@ -145,7 +146,7 @@ export const practiceAreas: PracticeArea[] = [
     Whether you're a tech startup, creative artist, or manufacturing firm, we provide strategic legal advice to protect your brand, content, and inventions from infringement.`,
   },
   {
-    id: "tax-laws",
+    practiceareasId: "tax-laws",
     title: "Tax Laws",
     tagline: "Tax strategy, compliance, and dispute resolution simplified.",
     description: `

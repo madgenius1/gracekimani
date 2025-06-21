@@ -9,7 +9,7 @@ import { legalDocuments } from "@/app/lib/resources";
 
 export default function LegalInsights() {
     const { resourceId } = useParams();
-    const resource = legalDocuments[resourceId as keyof typeof legalDocuments];
+    // const resource = legalDocuments[resourceId as keyof typeof legalDocuments];
 
     return (
         <section className="bg-gray-100 dark:bg-gray-100 py-12 sm:py-16 lg:py-20">

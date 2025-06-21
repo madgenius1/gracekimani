@@ -1,12 +1,15 @@
 "use client"
 
 
+import { useParams } from "next/navigation";
 import Link from 'next/link'
 import { BsArrowRight } from "react-icons/bs";
 import HeaderComponent from "@/app/components/ui/HeaderComponent";
 import { practiceAreasList } from "@/app/lib/practiceAreas";
 
 export default function Page() {
+    const { practiceareasId } = useParams();
+
     return (
         <main className="dark:bg-white bg-white">
             <HeaderComponent
@@ -20,7 +23,7 @@ export default function Page() {
                     >
                         {practiceAreasList.map((area, index) => (
                             <Link
-                                href={area.link}
+                                href={`/practice-areas/${area.practiceareasId}`}
                                 key={index}
                                 className="relative overflow-hidden rounded-lg shadow-lg group px-4 h-64"
                             >

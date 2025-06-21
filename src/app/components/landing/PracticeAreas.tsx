@@ -1,76 +1,14 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
+import { practiceAreasList } from "@/app/lib/practiceAreas";
 
-const practiceAreas = [
-    {
-        title: "Arbitration & Dispute Resolution",
-        link: "/practice-areas/arbitration-dispute-resolution",
-        description:
-            "Our expert Arbitration & Dispute Resolution services ensure swift and fair settlements for complex legal conflicts, guiding you through mediation and arbitration with precision.",
-        image: "/lawfirm-arbitration.jpg",
-        size: "large",
-    },
-    {
-        title: "Banking & Investment",
-        link: "/practice-areas/banking-investment",
-        description:
-            "We provide comprehensive legal guidance in Banking & Investment, ensuring compliance, structuring deals, and securing and growing your financial ventures.",
-        image: "/lawfirm-banking.jpg",
-        size: "small",
-    },
-    {
-        title: "Corporate & Commercial",
-        link: "/practice-areas/corporate-commercial",
-        description:
-            "Our Corporate & Commercial law expertise helps businesses navigate complex regulations, manage transactions, and achieve their strategic commercial goals with confidence.",
-        image: "/lawfirm-corporate.jpg",
-        size: "small",
-    },
-    {
-        title: "Family Law & Succession",
-        link: "/practice-areas/family-law-succession",
-        description:
-            "Compassionate and expert legal support for family matters including divorce, child custody, and seamless succession planning and estate administration.",
-        image: "/lawfirm-family.jpg",
-        size: "small",
-    },
-    {
-        title: "Employment and Labor Relations",
-        link: "/practice-areas/employment-labor-relations",
-        description:
-            "We specialize in Employment & Labor law, protecting your rights and fostering fair workplace practices.",
-        image: "/lawfirm-employment.jpg",
-        size: "large",
-    },
-    {
-        title: "Real Estate & Conveyancing",
-        link: "/practice-areas/real-estate-conveyancing",
-        description:
-            "Specialized services in property transactions, including land acquisition, leases, and dispute resolution, ensuring smooth and secure real estate dealings.",
-        image: "/lawfirm-realestate.jpg",
-        size: "small",
-    },
-    {
-        title: "Intellectual Property",
-        link: "/practice-areas/intellectual-property",
-        description:
-            "Protecting your innovations and creative works through robust copyright, trademark, and patent registration, and defending your intellectual assets.",
-        image: "/lawfirm-ip.jpg",
-        size: "medium",
-    },
-    {
-        title: "Tax Laws",
-        link: "/practice-areas/tax-laws",
-        description:
-            "Our Tax law services offer strategic advice to optimize your tax obligations and ensure compliance with regulations.",
-        image: "/lawfirm-tax.jpg",
-        size: "small",
-    },
-];
 
 export default function PracticeAreas() {
+    const { practiceareasId } = useParams();
+
     return (
         <section className="bg-gray-100 dark:bg-gray-100 py-12 sm:py-16 lg:py-20">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,9 +37,9 @@ export default function PracticeAreas() {
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 
           auto-rows-[180px] md:auto-rows-[220px] lg:auto-rows-[250px]"
                 >
-                    {practiceAreas.map((area, index) => (
+                    {practiceAreasList.map((area, index) => (
                         <Link
-                            href={area.link}
+                            href={`/practice-areas/${area.practiceareasId}`}
                             key={index}
                             className={`relative overflow-hidden rounded-lg shadow-lg group
                 ${area.size === "large" ? "md:col-span-2 lg:row-span-2 h-auto" : ""}
