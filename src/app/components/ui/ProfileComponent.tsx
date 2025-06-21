@@ -84,7 +84,7 @@ export default function ProfileComponent() {
                 <div className="py-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-6">
                     {practiceAreasList.map((area, index) => (
                         <Link
-                            href={area.link}
+                            href={area.title}
                             key={index}
                             className="relative overflow-hidden rounded-lg shadow-lg group px-4 h-64"
                         >
