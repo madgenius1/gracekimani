@@ -18,7 +18,7 @@ export default function Hero() {
                     </div>
 
                     {/* Main Headline and Description */}
-                    <div className="max-w-3xl mb-8 lg:mb-10">
+                    <div className="max-w-3xl mb-4 lg:mb-6">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl text-white font-bold leading-tight">
                             Your Trusted and Reliable Legal Partner
                         </h1>
@@ -27,8 +27,15 @@ export default function Hero() {
                         </p>
                     </div>
 
+                    {/* Vision, Mission, Objecives Section */}
+                    <div className="py-2 flex flex-row items-center space-x-8">
+                        <Link href="/about#Vision" className="hover:underline text-lg font-semibold text-white">Vision</Link>
+                        <Link href="/about#Mission" className="hover:underline text-lg font-semibold text-white">Mission</Link>
+                        <Link href="/about#Objectives" className="hover:underline text-lg font-semibold text-white">Objectives</Link>
+                    </div>
+
                     {/* Call to Action Button */}
-                    <div>
+                    <div className="py-4">
                         <Link
                             href="/contact"
                             className="inline-block bg-[#000EEE] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#099D15] transition duration-300 transform hover:scale-105"
