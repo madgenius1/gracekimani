@@ -3,7 +3,7 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
-
+import { CartProvider } from "./context/CartContext";
 const quickSand = Quicksand({ subsets: ["latin"] });
 
 
@@ -26,7 +26,9 @@ export default function RootLayout({
       </head>
       <body className={`${quickSand.className}  antialiased`}>
         <Navbar />
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
         <Footer />
       </body>
     </html>
