@@ -3,7 +3,7 @@
 import { useCart } from '@/app/context/CartContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 export default function CheckoutPage() {
     const { cart, removeFromCart, updateCartQuantity, getTotalPrice, clearCart } = useCart();
@@ -28,29 +28,29 @@ export default function CheckoutPage() {
         // This is a simplified example. In a real application, you'd send
         // cart details to a backend API route to create a Stripe Checkout Session.
 
-        try {
-            const response = await fetch('/api/create-checkout-session', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ items: cart }),
-            });
+        // try {
+        //     const response = await fetch('/api/create-checkout-session', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //         body: JSON.stringify({ items: cart }),
+        //     });
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message || 'Failed to create checkout session');
-            }
+        //     if (!response.ok) {
+        //         const errorData = await response.json();
+        //         throw new Error(errorData.message || 'Failed to create checkout session');
+        //     }
 
-            const session = await response.json();
+        //     const session = await response.json();
 
-            // Redirect to Stripe Checkout page
-            window.location.href = session.url; // Stripe returns a URL to redirect to
+        //     // Redirect to Stripe Checkout page
+        //     window.location.href = session.url; // Stripe returns a URL to redirect to
 
-        } catch (error: any) {
-            console.error("Error initiating checkout:", error);
-            alert(`Error initiating checkout: ${error.message || 'Please try again.'}`);
-        }
+        // } catch (error: any) {
+        //     console.error("Error initiating checkout:", error);
+        //     alert(`Error initiating checkout: ${error.message || 'Please try again.'}`);
+        // }
         // Stripe Integration Ends Here <---
     };
 
