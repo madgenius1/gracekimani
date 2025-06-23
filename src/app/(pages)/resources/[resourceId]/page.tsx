@@ -32,7 +32,7 @@ export default function ResourcePage() {
             resourceId: resourceItem.resourceId,
             documentTitle: resource.documentTitle,
             price: resource.price,
-            imageSrc: resource.imageSrc,
+            details: resource.details,
         });
         alert(`${resource.documentTitle} added to cart!`);
     };
@@ -63,15 +63,8 @@ export default function ResourcePage() {
                                         <span className="text-md font-semibold text-gray-950">
                                             {resource.documentTitle}
                                         </span>
-                                        <Image
-                                            src={resource.imageSrc}
-                                            alt={resource.imageAlt}
-                                            height={200}
-                                            width={360}
-                                            className='flex items-center justify-center blurred rounded-t-md'
-                                        />
-                                        <p className='text-sm font-medium text-gray-800 leading-relaxed'>
-                                            {resource.description}
+                                        <p className="text-sm leading-tight text-gray-700 font-light">
+                                            {resource.details}
                                         </p>
                                         <p className='text-lg font-bold text-gray-900'>
                                             Ksh {resource.price.toLocaleString()}
