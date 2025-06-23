@@ -1,7 +1,6 @@
 // app/resources/[resourceId]/page.tsx
 "use client"
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { resourceItems } from '@/app/lib/resources';
 import { useParams, useRouter } from "next/navigation"; // Import useRouter
