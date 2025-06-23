@@ -2,7 +2,6 @@
 
 import { useCart } from '@/app/context/CartContext';
 import Link from 'next/link';
-import Image from 'next/image';
 // import { useRouter } from 'next/navigation';
 
 export default function CheckoutPage() {
@@ -72,13 +71,7 @@ export default function CheckoutPage() {
                             <div className="space-y-4">
                                 {cart.map((item, index) => (
                                     <div key={`${item.resourceId}-${item.documentTitle}-${index}`} className="flex items-center gap-4 p-4 border rounded-md shadow-sm bg-white">
-                                        <Image
-                                            src={item.imageSrc}
-                                            alt={item.documentTitle}
-                                            width={360}
-                                            height={200}
-                                            className="rounded-md object-cover"
-                                        />
+                                        
                                         <div className="flex-1">
                                             <h3 className="text-lg font-semibold text-gray-900">{item.documentTitle}</h3>
                                             <p className="text-sm text-gray-600">Price: Ksh {item.price.toLocaleString()}</p>
